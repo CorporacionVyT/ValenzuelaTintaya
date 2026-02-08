@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Corporación V&T Valenzuela Tintaya</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-container">
+
+    <!-- LOGO -->
+    <div class="logo-area">
+      <img src="images/logo3.png" alt="Logo">
+      <div>
+        <h1>CORPORACIÓN V & T VALENZUELA TINTAYA</h1>
+        <span class="slogan">ingeniería y constitución</span>
+      </div>
+    </div>
+
+    <!-- MENÚ -->
+    <nav class="main-nav">
+      <a href="index.html" class="active">NUESTRAS UNIDADES</a>
+      <a href="maquinas.html">MAQUINAS PARA CONSTRUCCIÓN</a>
+      <a href="acerca.html">ACERCA DE NOSOTROS</a>
+      <a href="contacto.html">CONTÁCTANOS</a>
+    </nav>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/51904174697"
+       target="_blank"
+       class="whatsapp-header">
+      <img src="images/wasap4.webp" alt="WhatsApp">
+    </a>
+
+  </div>
+</header>
+
+<section class="hero hero-unidades">
+  <div class="hero-overlay">
+    <h2>Servicios para grandes proyectos</h2>
+    <p>Equipos confiables, seguros y listos para trabajar</p>
+    <div class="hero-buttons">
+  <a href="#catalogo" class="btn btn-primary">Ver Unidades</a>
+  <a href="https://wa.me/51983919157" target="_blank" class="btn btn-secondary">
+    Cotizar por WhatsApp
+  </a>
+</div>
+
+  </div>
+</section>
+
+<section id="catalogo" class="intro-text">
+  <h2>Catálogo de Unidades</h2>
+  <p>
+    <!--  -->Encuentra la unidad ideal para tu proyecto, con disponibilidad inmediata y soporte técnico
+  </p>
+</section>
+
+
+<div class="search-container">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Buscar maquinaria..."
+    onkeyup="filterProducts()"
+  >
+</div>
+
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="products-container">
+
+  <!-- PRODUCTO 1 -->
+  <div class="product-card"
+       onclick="openModal({
+         name: 'Minivan 22 personas',
+         description: 'Vehículo compacto y ágil, perfecto para traslados en rutas de difícil acceso o caminos estrechos.',
+         specs: [
+           'Sistemas de seguridad',
+           'Aire acondicionado',
+           'Mantenimiento Preventivo Regular'
+         ],
+         images: [
+           'images/Minivan3.jpg'
+         ]
+       })">
+
+    <img src="images/Minivan3.jpg" alt="Minivan 22 personas">
+    <h3>Minivan 22 personas</h3>
+    <p>Sistemas de Seguridad · Aire Acondicionado</p>
+  </div>
+
+  <!-- PRODUCTO 2 -->
+  <div class="product-card"
+       onclick="openModal({
+         name: 'MiniBus34',
+         description: 'Es ideal para el transporte seguro del personal en operaciones mineras y proyectos de construcción',
+         specs: [
+           'Capacidad 34 personas',
+           'Sistemas de seguridad',
+           'Perfecto para traslados diarios de personal a faenas y campamentos.',
+           'Mantenimientos preventivos constantes.',
+         ],
+         images: [
+           'images/MiniBus34.png'
+         ]
+       })">
+
+    <img src="images/MiniBus34.png" alt="MiniBus 34 personas">
+    <h3>MiniBus 34 personas</h3>
+    <p>Asientos ergonómicos · Sistemas de seguridad</p>
+  </div>
+
+  <!-- PRODUCTO 3 -->
+    <div class="product-card"
+       onclick="openModal({
+         name: 'Minivan 15 personas',
+         description: 'Equipo versátil para carga y movimiento de materiales.',
+         specs: [
+           'Capacidad 15 personas',
+           'Asientos ergonómicos y cómodos.',
+           'Vehículo versátil y compacto, perfecto para recorridos difíciles.',
+           'Equipado con sistemas de seguridad, ventilación y mantenimiento preventivo constante.',
+         ],
+         images: [
+           'images/Minivan152.png'
+         ]
+       })">
+
+    <img src="images/Minivan152.png" alt="Minivan 15 personas">
+    <h3>Minivan 15 personas</h3>
+    <p>Asientos ergonómicos · Sistemas de seguridad</p>
+  </div>
+
+  <!-- PRODUCTO 4 -->
+    <div class="product-card"
+       onclick="openModal({
+         name: 'Camioneta 4 X 4',
+         description: 'Tracción 4x4 - excelente desempeño en terrenos irregulares y caminos difíciles.',
+         specs: [
+           'Sistemas de seguridad, aire acondicionado y mantenimiento preventivo constante.',
+           'Capacidad para transportar hasta 5 ocupantes.',
+           'Ideales para supervisión de faenas, traslado ejecutivo y recorridos en campo.',
+         ],
+         images: [
+           'images/Camioneta4x4.png'
+         ]
+       })">
+    <img src="images/Camioneta4x4.png" alt="Camioneta 4 X 4">
+    <h3>Camioneta 4 x 4</h3>
+    <p>5 personas · Sistemas de seguridad</p>
+  </div>
+
+    <!-- PRODUCTO 5 -->
+    <div class="product-card"
+       onclick="openModal({
+         name: 'Camión con baranda',
+         description: 'Diseñada para el transporte de materiales, equipos y carga diversa dentro de proyectos',
+         specs: [
+           'Barandas laterales resistentes, que brindan mayor seguridad en el traslado de cargas.',
+           'Capacidad de carga adecuada para materiales voluminosos y pesados.',
+           'Ideal para el abastecimiento interno en faenas y campamentos.',
+           'Vehículos con mantenimientos preventivos constantes, que aseguran operatividad y confianza.',
+           ],
+         images: [
+           'images/camión con baranda.png'
+         ]
+       })">
+
+    <img src="images/camión con baranda.png" alt="Camión con baranda">
+    <h3>Camión con baranda</h3>
+    <p>3 TON · 5 TON · 8 TON</p>
+  </div>
+
+  <!-- PRODUCTO 6 -->
+    <div class="product-card"
+       onclick="openModal({
+         name: 'Camión Grua',
+         description: 'Especializada para la carga y descarga de materiales pesados, en operaciones de construcción e industriales.',
+         specs: [
+           'Equipado con grúa hidráulica, que permite manipular cargas con seguridad y precisión.',
+           'Diseñado para optimizar tiempos de trabajo y reducir riesgos operativos.',
+           'Vehículos sometidos a mantenimiento preventivo constante.',
+         ],
+         images: [
+           'images/camión grua.jpg'
+         ]
+       })">
+
+    <img src="images/camión grua.jpg" alt="Camión Grua">
+    <h3>Camión Grua</h3>
+    <p>15 TON · 20 TON</p>
+  </div>
+
+    <!-- PRODUCTO 7 -->
+  <div class="product-card"
+       onclick="openModal({
+         name: 'Camión sisterna de agua',
+         description: 'Equipado con sistemas de bombeo y aspersión, ideales para riego de vías, control de polvo y consumo en campamentos.',
+         specs: [
+           'Capacidad para transportar grandes volúmenes de agua',
+           'Equipado con sistemas de bombeo y aspersión, ideales para riego de vías, control de polvo y consumo en campamentos.',
+           'Mantenimientos preventivos constantes.',
+         ],
+         images: [
+           'images/sisterna de agua.png'
+         ]
+       })">
+
+    <img src="images/sisterna de agua.png" alt="Camión sisterna de agua">
+    <h3>Camión sisterna de agua</h3>
+    <p>Sistemas de bombeo · Gran capacidad</p>
+  </div>
+
+    <!-- PRODUCTO 8 -->
+    <div class="product-card"
+       onclick="openModal({
+         name: 'Ambulancia',
+         description: 'Diseñadas para el traslado rápido y seguro de emergencias médicas dentro y fuera de la operación.',
+         specs: [
+           'Equipadas con camilla, oxígeno, botiquín completo y sistema de comunicación interna.',
+           'Personal altamente capacitado para brindar primeros auxilios y atención prehospitalaria.',
+           'Mantenimientos preventivos y controles constantes'
+         ],
+         images: [
+           'images/ambulancia.png'
+         ]
+       })">
+
+    <img src="images/ambulancia.png" alt="Ambulancia">
+    <h3>Ambulancia</h3>
+    <p>Oxígeno · Botiquín · Personal capacitado</p>
+  </div>
+
+    <!-- PRODUCTO 9 -->
+    <div class="product-card"
+       onclick="openModal({
+         name: 'Camión sistern de combustible',
+         description: 'Tanques especializados y sistemas de seguridad certificados para el traslado de hidrocarburos.',
+         specs: [
+           'Equipado con sistema de bombeo y descarga eficiente',
+           'Ideal para el abastecimiento de maquinaria pesada, vehículos y generadores en campo.',
+           'Vehículos sometidos a estricto mantenimiento preventivo'
+         ],
+         images: [
+           'images/sisterna de combustible.png',
+         ]
+       })">
+
+    <img src="images/sisterna de combustible.png" alt="Camión sisterna de combustible">
+    <h3>Camión sistern de combustible</h3>
+    <p>Bombeo de descarga · Gran capacidad</p>
+  </div>
+
+</main>
+
+<!-- MODAL -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <div class="modal-left">
+      <img id="mainImage" class="main-image">
+      <div class="thumbnails"></div>
+    </div>
+
+    <div class="modal-right">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <ul id="modalSpecs"></ul>
+
+      <a id="whatsappBtn"
+         class="whatsapp-btn"
+         target="_blank">
+        Solicitar Información
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function openModal(product) {
+  document.getElementById("modalTitle").textContent = product.name;
+  document.getElementById("modalDescription").textContent = product.description;
+
+  const specsList = document.getElementById("modalSpecs");
+  specsList.innerHTML = "";
+  product.specs.forEach(spec => {
+    const li = document.createElement("li");
+    li.textContent = spec;
+    specsList.appendChild(li);
+  });
+
+  const mainImage = document.getElementById("mainImage");
+  const thumbnails = document.querySelector(".thumbnails");
+
+  mainImage.src = product.images[0];
+  thumbnails.innerHTML = "";
+
+  product.images.forEach(img => {
+    const thumb = document.createElement("img");
+    thumb.src = img;
+    thumb.onclick = () => mainImage.src = img;
+    thumbnails.appendChild(thumb);
+  });
+
+  document.getElementById("whatsappBtn").href =
+    "https://wa.me/51983919157?text=" +
+    encodeURIComponent("Hola, vengo de la web, deseo información sobre: " + product.name);
+
+  document.getElementById("productModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("productModal").style.display = "none";
+}
+
+window.onclick = function(e) {
+  const modal = document.getElementById("productModal");
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+}
+
+function filterProducts() {
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toLowerCase();
+  const products = document.querySelectorAll(".product-card");
+
+  products.forEach(product => {
+    const text = product.innerText.toLowerCase();
+
+    if (text.includes(filter)) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
+}
+
+</script>
+
+</body>
+</html>
